@@ -280,13 +280,12 @@ const config = {
 
 
     ctx.fillStyle =
-      `rgba(
-        100,
-        180,
-        255,
-        ${0.24 + pulse * 0.28}
-      )`;
-
+  `rgba(
+    120,
+    190,
+    255,
+    ${0.45 + pulse * 0.35}
+  )`;
 
     ctx.fill();
 
@@ -310,7 +309,7 @@ const config = {
         distance /
         config.connectionDistance
       ) *
-      0.15;
+      0.32;
 
 
     ctx.beginPath();
@@ -354,14 +353,14 @@ const config = {
     distance
   ) {
 
-    const alpha =
-      Math.max(
-        0,
-        1 -
-        distance /
-        config.mouseDistance
-      ) *
-      0.16;
+   const alpha =
+  Math.max(
+    0,
+    1 -
+    distance /
+    config.mouseDistance
+  ) *
+  0.38;
 
 
     ctx.beginPath();
@@ -548,7 +547,7 @@ const config = {
 
 
       ctx.fillStyle =
-        "rgba(130, 205, 255, 0.65)";
+        "rgba(130, 220, 255, 0.95)";
 
 
       ctx.fill();
