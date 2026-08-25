@@ -1699,3 +1699,59 @@ footer {
   }
 
 }
+/* =========================================================
+   PROFESSIONAL ANIMATED NETWORK BACKGROUND
+========================================================= */
+
+#ambient-network {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+
+  pointer-events: none;
+
+  opacity: 0.65;
+
+  /* Keeps the animation subtle */
+  mix-blend-mode: screen;
+}
+
+
+/* Make sure the existing background layers
+   remain behind the animated network */
+
+.grid-background {
+  z-index: -3;
+}
+
+.ambient {
+  z-index: -2;
+}
+
+#ambient-network {
+  z-index: -1;
+}
+
+
+/* Prevent animation from affecting page scrolling */
+
+body {
+  position: relative;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  #ambient-network {
+    display: none;
+  }
+
+}
