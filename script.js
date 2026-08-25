@@ -105,20 +105,19 @@ const config = {
 
   density: 0.000013,
 
-  minNodes: 50,
+  minNodes: 55,
 
-  maxNodes: 125,
+  maxNodes: 130,
 
-  connectionDistance: 165,
+  connectionDistance: 170,
 
-  mouseDistance: 220,
+  mouseDistance: 230,
 
   nodeSpeed: 0.18,
 
-  particleChance: 0.003
+  particleChance: 0.004
 
 };
-
 
   /* =========================================================
      MOUSE
@@ -279,13 +278,30 @@ const config = {
     );
 
 
-    ctx.fillStyle =
-  `rgba(
-    120,
-    190,
-    255,
-    ${0.45 + pulse * 0.35}
-  )`;
+const purple =
+  node.phase % 2 > 1;
+
+if (purple) {
+
+  ctx.fillStyle =
+    `rgba(
+      170,
+      120,
+      255,
+      ${0.65 + pulse * 0.30}
+    )`;
+
+} else {
+
+  ctx.fillStyle =
+    `rgba(
+      80,
+      205,
+      255,
+      ${0.65 + pulse * 0.30}
+    )`;
+
+}
 
     ctx.fill();
 
@@ -309,7 +325,7 @@ const config = {
         distance /
         config.connectionDistance
       ) *
-      0.32;
+      0.55;
 
 
     ctx.beginPath();
@@ -360,7 +376,7 @@ const config = {
     distance /
     config.mouseDistance
   ) *
-  0.38;
+  0.65;
 
 
     ctx.beginPath();
@@ -547,7 +563,7 @@ const config = {
 
 
       ctx.fillStyle =
-        "rgba(130, 220, 255, 0.95)";
+        "rgba(150, 225, 255, 1)";
 
 
       ctx.fill();
