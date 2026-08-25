@@ -734,3 +734,24 @@ padding: 20px 0;
 }
 
 }
+/* ================================
+Subtle Animations
+================================ */
+
+.reveal {
+opacity: 0;
+transform: translateY(18px);
+
+transition:
+opacity 0.7s ease,
+transform 0.7s ease;
+}
+
+.reveal.visible {
+opacity: 1;
+transform: translateY(0);
+}
+
+.navbar.scrolled {
+box-shadow: 0 8px 30px rgba(16, 24, 40, 0.06);
+}
