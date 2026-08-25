@@ -12,18 +12,55 @@
   >
 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* =========================================
+       PROFESSIONAL AMBIENT NETWORK BACKGROUND
+       ========================================= */
+
+    #ambient-network {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+      opacity: 0.72;
+    }
+
+    body {
+      position: relative;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #ambient-network {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- Ambient background -->
+  <!-- =========================================
+       ANIMATED PROFESSIONAL BACKGROUND
+       ========================================= -->
+
+  <canvas id="ambient-network" aria-hidden="true"></canvas>
+
+
+  <!-- Existing ambient background -->
   <div class="ambient ambient-one"></div>
   <div class="ambient ambient-two"></div>
   <div class="grid-background"></div>
 
 
-  <!-- Navigation -->
+  <!-- =========================================
+       NAVIGATION
+       ========================================= -->
+
   <header class="navbar">
+
     <div class="nav-container">
 
       <a href="#" class="name-mark">
@@ -42,14 +79,20 @@
       </a>
 
     </div>
+
   </header>
 
 
+  <!-- =========================================
+       MAIN
+       ========================================= -->
+
   <main>
+
 
     <!-- =========================================
          HERO
-    ========================================== -->
+         ========================================= -->
 
     <section class="hero">
 
@@ -87,6 +130,7 @@
 
           </div>
 
+
           <div class="hero-meta">
 
             <div>
@@ -109,7 +153,9 @@
         </div>
 
 
-        <!-- Portrait composition -->
+        <!-- =========================================
+             PORTRAIT
+             ========================================= -->
 
         <div class="portrait-stage">
 
@@ -128,30 +174,41 @@
           </div>
 
 
-          <!-- Floating labels -->
+          <!-- Floating cards -->
 
           <div class="floating-card card-product">
+
             <span class="mini-icon">◈</span>
+
             <div>
               <small>FOCUS</small>
               <strong>PRODUCT</strong>
             </div>
+
           </div>
 
+
           <div class="floating-card card-data">
+
             <span class="mini-icon">◌</span>
+
             <div>
               <small>DRIVEN BY</small>
               <strong>DATA</strong>
             </div>
+
           </div>
 
+
           <div class="floating-card card-ai">
+
             <span class="mini-icon">✦</span>
+
             <div>
               <small>EXPLORING</small>
               <strong>AI</strong>
             </div>
+
           </div>
 
         </div>
@@ -160,16 +217,20 @@
 
 
       <div class="scroll-indicator">
+
         <span></span>
+
         SCROLL TO EXPLORE
+
       </div>
 
     </section>
 
 
+
     <!-- =========================================
          ABOUT
-    ========================================== -->
+         ========================================= -->
 
     <section id="about" class="section about-section">
 
@@ -180,12 +241,14 @@
           ABOUT
         </div>
 
+
         <div class="about-layout">
 
           <h2>
             Business thinking.
             <span>Product mindset.</span>
           </h2>
+
 
           <div class="about-copy">
 
@@ -217,9 +280,10 @@
     </section>
 
 
+
     <!-- =========================================
          EXPERTISE
-    ========================================== -->
+         ========================================= -->
 
     <section id="expertise" class="section expertise-section">
 
@@ -229,6 +293,7 @@
           <span>02</span>
           WHAT I DO
         </div>
+
 
         <div class="section-title-row">
 
@@ -246,6 +311,7 @@
 
 
         <div class="expertise-grid">
+
 
           <article class="glass-card">
 
@@ -390,9 +456,10 @@
     </section>
 
 
+
     <!-- =========================================
          EXPERIENCE
-    ========================================== -->
+         ========================================= -->
 
     <section id="experience" class="section experience-section">
 
@@ -402,6 +469,7 @@
           <span>03</span>
           EXPERIENCE
         </div>
+
 
         <h2 class="experience-title">
           A journey across
@@ -427,8 +495,13 @@
             <div class="experience-main">
 
               <div class="company-row">
+
                 <h3>GeekyAnts</h3>
-                <span class="current-badge">CURRENT</span>
+
+                <span class="current-badge">
+                  CURRENT
+                </span>
+
               </div>
 
               <p class="experience-role">
@@ -451,6 +524,7 @@
             </div>
 
           </article>
+
 
 
           <!-- EBM Papst -->
@@ -482,10 +556,13 @@
               </p>
 
               <div class="impact-highlight">
+
                 <strong>18%</strong>
+
                 <span>
                   improvement in capacity-planning accuracy
                 </span>
+
               </div>
 
               <div class="experience-tags">
@@ -499,6 +576,7 @@
             </div>
 
           </article>
+
 
 
           <!-- Amazon -->
@@ -530,10 +608,13 @@
               </p>
 
               <div class="impact-highlight">
+
                 <strong>3 FTE</strong>
+
                 <span>
                   equivalent resource savings through automation
                 </span>
+
               </div>
 
               <div class="experience-tags">
@@ -554,9 +635,10 @@
     </section>
 
 
+
     <!-- =========================================
          PRODUCT JOURNEY
-    ========================================== -->
+         ========================================= -->
 
     <section id="journey" class="section journey-section">
 
@@ -566,6 +648,7 @@
           <span>04</span>
           PRODUCT JOURNEY
         </div>
+
 
         <div class="journey-layout">
 
@@ -579,6 +662,7 @@
 
           </div>
 
+
           <div class="journey-copy">
 
             <p>
@@ -586,6 +670,7 @@
               businesses need. Product thinking challenges me to
               go one step further.
             </p>
+
 
             <div class="question-list">
 
@@ -620,9 +705,10 @@
     </section>
 
 
+
     <!-- =========================================
-         WHAT YOU'LL FIND
-    ========================================== -->
+         EXPLORE
+         ========================================= -->
 
     <section class="section find-section">
 
@@ -633,10 +719,12 @@
           EXPLORE
         </div>
 
+
         <h2>
           Things I'm
           <span>building & learning.</span>
         </h2>
+
 
         <div class="explore-grid">
 
@@ -672,9 +760,10 @@
     </section>
 
 
+
     <!-- =========================================
          CONTACT
-    ========================================== -->
+         ========================================= -->
 
     <section id="contact" class="contact-section">
 
@@ -687,15 +776,18 @@
           LET'S CONNECT
         </div>
 
+
         <h2>
           Have a problem
           <span>worth solving?</span>
         </h2>
 
+
         <p>
           I'm always interested in conversations around Product,
           Business Analysis, Agile, Data, AI, and digital transformation.
         </p>
+
 
         <a
           href="mailto:jaiganeshsrinivasan26@gmail.com"
@@ -712,7 +804,10 @@
   </main>
 
 
-  <!-- Footer -->
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
 
   <footer>
 
@@ -722,11 +817,13 @@
         © 2026 Jai Ganesh Srinivasan
       </p>
 
+
       <div class="footer-links">
 
         <a
           href="https://github.com/jaiganeshsrinivasan26"
           target="_blank"
+          rel="noopener noreferrer"
         >
           GitHub
         </a>
@@ -736,6 +833,7 @@
         <a
           href="YOUR_LINKEDIN_URL"
           target="_blank"
+          rel="noopener noreferrer"
         >
           LinkedIn
         </a>
@@ -747,6 +845,770 @@
   </footer>
 
 
+
+  <!-- =========================================
+       ANIMATION SCRIPT
+       ========================================= -->
+
+  <script>
+    (() => {
+
+      const canvas =
+        document.getElementById("ambient-network");
+
+      if (
+        !canvas ||
+        window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches
+      ) {
+        return;
+      }
+
+
+      const ctx =
+        canvas.getContext("2d");
+
+
+      let width = 0;
+      let height = 0;
+      let dpr = 1;
+
+      let nodes = [];
+
+      let animationId = 0;
+
+
+      const mouse = {
+        x: null,
+        y: null,
+        active: false
+      };
+
+
+      const config = {
+
+        density: 0.0000105,
+
+        minNodes: 42,
+
+        maxNodes: 105,
+
+        connectionDistance: 145,
+
+        mouseDistance: 190,
+
+        nodeSpeed: 0.16,
+
+        particleChance: 0.0018
+
+      };
+
+
+      /* =========================================
+         CREATE NODE
+         ========================================= */
+
+      function createNode() {
+
+        return {
+
+          x: Math.random() * width,
+
+          y: Math.random() * height,
+
+          vx:
+            (Math.random() - 0.5)
+            * config.nodeSpeed,
+
+          vy:
+            (Math.random() - 0.5)
+            * config.nodeSpeed,
+
+          radius:
+            Math.random() * 1.25 + 0.55,
+
+          phase:
+            Math.random() * Math.PI * 2,
+
+          pulse:
+            Math.random() * 0.018 + 0.008
+
+        };
+
+      }
+
+
+
+      /* =========================================
+         RESIZE
+         ========================================= */
+
+      function resize() {
+
+        dpr =
+          Math.min(
+            window.devicePixelRatio || 1,
+            2
+          );
+
+
+        width =
+          window.innerWidth;
+
+        height =
+          window.innerHeight;
+
+
+        canvas.width =
+          Math.floor(width * dpr);
+
+        canvas.height =
+          Math.floor(height * dpr);
+
+
+        canvas.style.width =
+          width + "px";
+
+        canvas.style.height =
+          height + "px";
+
+
+        ctx.setTransform(
+          dpr,
+          0,
+          0,
+          dpr,
+          0,
+          0
+        );
+
+
+        const count =
+          Math.max(
+
+            config.minNodes,
+
+            Math.min(
+
+              config.maxNodes,
+
+              Math.floor(
+                width *
+                height *
+                config.density
+              )
+
+            )
+
+          );
+
+
+        nodes =
+          Array.from(
+            { length: count },
+            createNode
+          );
+
+      }
+
+
+
+      /* =========================================
+         DRAW NODE
+         ========================================= */
+
+      function drawNode(node, time) {
+
+        const pulse =
+          0.45 +
+          Math.sin(
+            time *
+            node.pulse +
+            node.phase
+          ) *
+          0.22;
+
+
+        ctx.beginPath();
+
+
+        ctx.arc(
+
+          node.x,
+
+          node.y,
+
+          node.radius,
+
+          0,
+
+          Math.PI * 2
+
+        );
+
+
+        ctx.fillStyle =
+          `rgba(
+            100,
+            180,
+            255,
+            ${0.24 + pulse * 0.28}
+          )`;
+
+
+        ctx.fill();
+
+      }
+
+
+
+      /* =========================================
+         DRAW CONNECTION
+         ========================================= */
+
+      function drawConnection(
+        a,
+        b,
+        distance
+      ) {
+
+        const alpha =
+          Math.max(
+            0,
+            1 -
+            distance /
+            config.connectionDistance
+          ) *
+          0.15;
+
+
+        ctx.beginPath();
+
+
+        ctx.moveTo(
+          a.x,
+          a.y
+        );
+
+
+        ctx.lineTo(
+          b.x,
+          b.y
+        );
+
+
+        ctx.strokeStyle =
+          `rgba(
+            90,
+            160,
+            230,
+            ${alpha}
+          )`;
+
+
+        ctx.lineWidth = 0.65;
+
+
+        ctx.stroke();
+
+      }
+
+
+
+      /* =========================================
+         MOUSE CONNECTION
+         ========================================= */
+
+      function drawMouseConnection(
+        node,
+        distance
+      ) {
+
+        const alpha =
+          Math.max(
+            0,
+            1 -
+            distance /
+            config.mouseDistance
+          ) *
+          0.16;
+
+
+        ctx.beginPath();
+
+
+        ctx.moveTo(
+          node.x,
+          node.y
+        );
+
+
+        ctx.lineTo(
+          mouse.x,
+          mouse.y
+        );
+
+
+        ctx.strokeStyle =
+          `rgba(
+            120,
+            195,
+            255,
+            ${alpha}
+          )`;
+
+
+        ctx.lineWidth = 0.75;
+
+
+        ctx.stroke();
+
+      }
+
+
+
+      /* =========================================
+         UPDATE NODES
+         ========================================= */
+
+      function update() {
+
+        for (const node of nodes) {
+
+          node.x += node.vx;
+
+          node.y += node.vy;
+
+
+          /* Wrap around screen */
+
+          if (node.x < -20)
+            node.x = width + 20;
+
+          if (node.x > width + 20)
+            node.x = -20;
+
+
+          if (node.y < -20)
+            node.y = height + 20;
+
+          if (node.y > height + 20)
+            node.y = -20;
+
+
+
+          /* Subtle mouse attraction */
+
+          if (mouse.active) {
+
+            const dx =
+              mouse.x -
+              node.x;
+
+            const dy =
+              mouse.y -
+              node.y;
+
+
+            const distance =
+              Math.hypot(
+                dx,
+                dy
+              );
+
+
+            if (
+              distance > 20 &&
+              distance < 230
+            ) {
+
+              node.vx +=
+                (dx / distance)
+                * 0.0012;
+
+              node.vy +=
+                (dy / distance)
+                * 0.0012;
+
+            }
+
+          }
+
+
+          /* Limit speed */
+
+          const speed =
+            Math.hypot(
+              node.vx,
+              node.vy
+            );
+
+
+          if (speed > 0.32) {
+
+            node.vx *= 0.985;
+
+            node.vy *= 0.985;
+
+          }
+
+        }
+
+      }
+
+
+
+      /* =========================================
+         DATA PACKET
+         ========================================= */
+
+      function animatePacket(
+        a,
+        b
+      ) {
+
+        const start =
+          performance.now();
+
+
+        const duration =
+          1500 +
+          Math.random() * 1000;
+
+
+        function packetFrame(now) {
+
+          const progress =
+            Math.min(
+              1,
+              (now - start) /
+              duration
+            );
+
+
+          const x =
+            a.x +
+            (b.x - a.x) *
+            progress;
+
+
+          const y =
+            a.y +
+            (b.y - a.y) *
+            progress;
+
+
+          ctx.beginPath();
+
+
+          ctx.arc(
+            x,
+            y,
+            1.2,
+            0,
+            Math.PI * 2
+          );
+
+
+          ctx.fillStyle =
+            "rgba(130, 205, 255, 0.65)";
+
+
+          ctx.fill();
+
+
+          if (progress < 1) {
+
+            requestAnimationFrame(
+              packetFrame
+            );
+
+          }
+
+        }
+
+
+        requestAnimationFrame(
+          packetFrame
+        );
+
+      }
+
+
+
+      /* =========================================
+         DRAW
+         ========================================= */
+
+      function draw(time) {
+
+        ctx.clearRect(
+          0,
+          0,
+          width,
+          height
+        );
+
+
+        /* Network lines */
+
+        for (
+          let i = 0;
+          i < nodes.length;
+          i++
+        ) {
+
+          const a =
+            nodes[i];
+
+
+          for (
+            let j = i + 1;
+            j < nodes.length;
+            j++
+          ) {
+
+            const b =
+              nodes[j];
+
+
+            const distance =
+              Math.hypot(
+                a.x - b.x,
+                a.y - b.y
+              );
+
+
+            if (
+              distance <
+              config.connectionDistance
+            ) {
+
+              drawConnection(
+                a,
+                b,
+                distance
+              );
+
+            }
+
+          }
+
+
+          /* Mouse interaction */
+
+          if (mouse.active) {
+
+            const distance =
+              Math.hypot(
+                a.x - mouse.x,
+                a.y - mouse.y
+              );
+
+
+            if (
+              distance <
+              config.mouseDistance
+            ) {
+
+              drawMouseConnection(
+                a,
+                distance
+              );
+
+            }
+
+          }
+
+        }
+
+
+        /* Nodes */
+
+        for (
+          const node of nodes
+        ) {
+
+          drawNode(
+            node,
+            time
+          );
+
+        }
+
+
+        /* Random data packets */
+
+        if (
+          Math.random() <
+          config.particleChance
+        ) {
+
+          const a =
+            nodes[
+              Math.floor(
+                Math.random() *
+                nodes.length
+              )
+            ];
+
+
+          let nearest =
+            null;
+
+
+          let nearestDistance =
+            config.connectionDistance;
+
+
+          for (
+            const b of nodes
+          ) {
+
+            if (b === a)
+              continue;
+
+
+            const distance =
+              Math.hypot(
+                a.x - b.x,
+                a.y - b.y
+              );
+
+
+            if (
+              distance <
+              nearestDistance
+            ) {
+
+              nearest =
+                b;
+
+              nearestDistance =
+                distance;
+
+            }
+
+          }
+
+
+          if (nearest) {
+
+            animatePacket(
+              a,
+              nearest
+            );
+
+          }
+
+        }
+
+      }
+
+
+
+      /* =========================================
+         ANIMATION LOOP
+         ========================================= */
+
+      function loop(time) {
+
+        update();
+
+        draw(time);
+
+        animationId =
+          requestAnimationFrame(
+            loop
+          );
+
+      }
+
+
+
+      /* =========================================
+         EVENTS
+         ========================================= */
+
+      window.addEventListener(
+        "resize",
+        resize,
+        { passive: true }
+      );
+
+
+      window.addEventListener(
+        "mousemove",
+        (event) => {
+
+          mouse.x =
+            event.clientX;
+
+          mouse.y =
+            event.clientY;
+
+          mouse.active =
+            true;
+
+        },
+        { passive: true }
+      );
+
+
+      window.addEventListener(
+        "mouseleave",
+        () => {
+
+          mouse.active =
+            false;
+
+        },
+        { passive: true }
+      );
+
+
+      /* Pause animation when tab isn't visible */
+
+      document.addEventListener(
+        "visibilitychange",
+        () => {
+
+          if (
+            document.hidden
+          ) {
+
+            cancelAnimationFrame(
+              animationId
+            );
+
+          } else {
+
+            animationId =
+              requestAnimationFrame(
+                loop
+              );
+
+          }
+
+        }
+      );
+
+
+      /* Start */
+
+      resize();
+
+      animationId =
+        requestAnimationFrame(
+          loop
+        );
+
+    })();
+  </script>
+
+
+  <!-- Your existing JavaScript -->
   <script src="script.js"></script>
 
 </body>
