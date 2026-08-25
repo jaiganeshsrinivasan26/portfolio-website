@@ -3,14 +3,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
 
   const handleScroll = () => {
+
     if (window.scrollY > 30) {
       navbar.classList.add("scrolled");
     } else {
       navbar.classList.remove("scrolled");
     }
+
   };
 
-  window.addEventListener("scroll", handleScroll);
+  window.addEventListener(
+    "scroll",
+    handleScroll
+  );
 
   handleScroll();
 
@@ -19,37 +24,48 @@ document.addEventListener("DOMContentLoaded", () => {
     Scroll reveal
   */
 
-  const revealElements = document.querySelectorAll(
-    ".glass-card, .experience-item, .about-layout, .journey-layout, .explore-grid > div"
-  );
+  const revealElements =
+    document.querySelectorAll(
+      ".glass-card, .experience-item, .about-layout, .journey-layout, .explore-grid > div"
+    );
 
-  const observer = new IntersectionObserver(
-    (entries) => {
 
-      entries.forEach((entry) => {
+  const observer =
+    new IntersectionObserver(
+      (entries) => {
 
-        if (entry.isIntersecting) {
+        entries.forEach((entry) => {
 
-          entry.target.classList.add("visible");
+          if (entry.isIntersecting) {
 
-          observer.unobserve(entry.target);
+            entry.target.classList.add(
+              "visible"
+            );
 
-        }
+            observer.unobserve(
+              entry.target
+            );
 
-      });
+          }
 
-    },
-    {
-      threshold: 0.12
-    }
-  );
+        });
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
 
 
   revealElements.forEach((element) => {
 
-    element.classList.add("reveal");
+    element.classList.add(
+      "reveal"
+    );
 
-    observer.observe(element);
+    observer.observe(
+      element
+    );
 
   });
 
