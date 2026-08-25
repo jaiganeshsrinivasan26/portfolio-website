@@ -101,47 +101,23 @@ document.addEventListener("DOMContentLoaded", () => {
      CONFIGURATION
   ========================================================= */
 
-  const config = {
+const config = {
 
-    /*
-      Number of nodes is automatically calculated
-      based on screen size.
-    */
+  density: 0.000013,
 
-    density: 0.0000105,
+  minNodes: 50,
 
-    minNodes: 42,
+  maxNodes: 125,
 
-    maxNodes: 105,
+  connectionDistance: 165,
 
-    /*
-      Maximum distance between nodes
-      before the connecting line disappears.
-    */
+  mouseDistance: 220,
 
-    connectionDistance: 145,
+  nodeSpeed: 0.18,
 
-    /*
-      Distance around the mouse where
-      nodes become slightly interactive.
-    */
+  particleChance: 0.003
 
-    mouseDistance: 190,
-
-    /*
-      Very slow movement keeps it professional.
-    */
-
-    nodeSpeed: 0.16,
-
-    /*
-      Probability of a tiny data packet
-      appearing on a connection.
-    */
-
-    particleChance: 0.0018
-
-  };
+};
 
 
   /* =========================================================
