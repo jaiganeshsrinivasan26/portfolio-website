@@ -1700,22 +1700,149 @@ footer {
 
 }
 /* =========================================================
-   PROFESSIONAL ANIMATED NETWORK BACKGROUND
+   PROFESSIONAL AMBIENT NETWORK BACKGROUND
 ========================================================= */
 
 #ambient-network {
   position: fixed;
   inset: 0;
+
   width: 100%;
   height: 100%;
-  z-index: -1;
+
   pointer-events: none;
-  opacity: 0.65;
+
+  /*
+    Keep the animation behind the content,
+    but above the base background.
+  */
+  z-index: -1;
+
+  /*
+    Increased visibility.
+  */
+  opacity: 1;
+
   mix-blend-mode: screen;
 }
 
+
+/* =========================================================
+   LET THE ANIMATION SHOW THROUGH THE SECTIONS
+========================================================= */
+
+.about-section,
+.experience-section,
+.find-section {
+  background: rgba(7, 9, 16, 0.72);
+}
+
+
+.expertise-section {
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(139, 92, 246, 0.10),
+      transparent 28%
+    ),
+    rgba(5, 6, 10, 0.72);
+}
+
+
+.journey-section {
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(139, 92, 246, 0.13),
+      transparent 30%
+    ),
+    rgba(5, 6, 10, 0.72);
+}
+
+
+.contact-section {
+  background: rgba(3, 4, 7, 0.78);
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+/* =========================================================
+   PROFESSIONAL AMBIENT NETWORK BACKGROUND
+========================================================= */
+
+#ambient-network {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+
+  /*
+    Keep the animation behind the content,
+    but above the base background.
+  */
+  z-index: -1;
+
+  /*
+    Increased visibility.
+  */
+  opacity: 1;
+
+  mix-blend-mode: screen;
+}
+
+
+/* =========================================================
+   LET THE ANIMATION SHOW THROUGH THE SECTIONS
+========================================================= */
+
+.about-section,
+.experience-section,
+.find-section {
+  background: rgba(7, 9, 16, 0.72);
+}
+
+
+.expertise-section {
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(139, 92, 246, 0.10),
+      transparent 28%
+    ),
+    rgba(5, 6, 10, 0.72);
+}
+
+
+.journey-section {
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(139, 92, 246, 0.13),
+      transparent 30%
+    ),
+    rgba(5, 6, 10, 0.72);
+}
+
+
+.contact-section {
+  background: rgba(3, 4, 7, 0.78);
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
 @media (prefers-reduced-motion: reduce) {
+
   #ambient-network {
     display: none;
   }
+
 }
